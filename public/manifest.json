@@ -1,0 +1,27 @@
+{
+  "name": "حرفتي - منصة الخدمات المنزلية",
+  "short_name": "حرفتي",
+  "description": "منصة تجمع الحرفيين والعملاء لإنجاز الخدمات المنزلية",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F1E3C",
+  "theme_color": "#D4A24C",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
