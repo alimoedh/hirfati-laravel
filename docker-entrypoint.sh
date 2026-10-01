@@ -1,27 +1,30 @@
 #!/bin/sh
 set -e
 
-# إنشاء .env من متغيرات Railway
-cat > /app/.env <<EOF
-APP_NAME="${APP_NAME:-حرفتي}"
-APP_ENV="${APP_ENV:-production}"
-APP_KEY="${APP_KEY}"
-APP_DEBUG="${APP_DEBUG:-false}"
-APP_URL="${APP_URL:-http://localhost}"
+# كتابة .env مباشرة بالقيم الثابتة
+cat > /app/.env <<'EOF'
+APP_NAME=Hirfati
+APP_ENV=production
+APP_KEY=base64:PUT_YOUR_KEY_HERE
+APP_DEBUG=true
+APP_URL=http://localhost
+APP_TIMEZONE=Asia/Aden
+APP_LOCALE=ar
 
-DB_CONNECTION="${DB_CONNECTION:-mysql}"
-DB_HOST="${DB_HOST}"
-DB_PORT="${DB_PORT}"
-DB_DATABASE="${DB_DATABASE}"
-DB_USERNAME="${DB_USERNAME}"
-DB_PASSWORD="${DB_PASSWORD}"
+LOG_CHANNEL=stderr
+LOG_LEVEL=debug
 
-SESSION_DRIVER="${SESSION_DRIVER:-file}"
-CACHE_STORE="${CACHE_STORE:-file}"
-QUEUE_CONNECTION="${QUEUE_CONNECTION:-sync}"
-FILESYSTEM_DISK="${FILESYSTEM_DISK:-public}"
+DB_CONNECTION=mysql
+DB_HOST=mysql.railway.internal
+DB_PORT=3306
+DB_DATABASE=railway
+DB_USERNAME=root
+DB_PASSWORD=PUT_MYSQL_PASSWORD_HERE
 
-LOG_CHANNEL="${LOG_CHANNEL:-stderr}"
+SESSION_DRIVER=file
+CACHE_STORE=file
+QUEUE_CONNECTION=sync
+FILESYSTEM_DISK=public
 EOF
 
 # تفريغ الكاش
