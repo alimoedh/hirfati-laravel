@@ -5,7 +5,7 @@ set -e
 cat > /app/.env <<'EOF'
 APP_NAME=Hirfati
 APP_ENV=production
-APP_KEY=base64:PUT_YOUR_KEY_HERE
+APP_KEY=base64:lceySTcheu2qyz2jp/QBSwWsKA7xU7hnPZSIOiLBNF8=
 APP_DEBUG=true
 APP_URL=http://localhost
 APP_TIMEZONE=Asia/Aden
